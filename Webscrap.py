@@ -1,40 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-# import requests
-# from bs4 import BeautifulSoup
-# import re
-#
-# headers = {
-#     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
-# }
-#
-# login_data ={
-#     'username': 'test_teacher',
-#     'password': 'test_teacher'
-# }
-#
-# with requests.Session() as s:
-#     url =  'https://mguruenglish.com/login'
-#     res = s.get(url,headers = headers)
-#     res = s.post(url,data=login_data,headers = headers)
-#     source = BeautifulSoup(res.content,'html5lib')
-#     nameDiv = source.find('div', text= re.compile('Sheebu - the Sheep'))
-#     atag = nameDiv.find_parent('a')
-#     print(atag.get('href'))
-#     storyUrl = 'https://mguruenglish.com/stories/pages/22/0'
-#     res = s.get(storyUrl,headers = headers)
-#     source = BeautifulSoup(res.content,'html5lib')
-#     audioFilePath = source.find('audio', attrs={'id':'audiofile'})['src']
-#     audioFileName = audioFilePath.split('/')[-1]
-#     audiofile = s.get(audioFilePath,headers = headers, allow_redirects=True)
-#     #with open('/rajeev/webscrap/'+audioFileName,'wb') as file:
-#     #        file.write(audiofile.content)
-#
-#     #print(audioFilePath, audioFileName)
-#     #display(HTML(res.content.decode("utf-8")))
 
-# str = "Anaya's-123  Thumb"
-# re.sub('[\W_]+', '', str)
 import classes.Browser as b
 import classes.MguruParser as p
 import classes.FileManager as f

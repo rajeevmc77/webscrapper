@@ -2,6 +2,7 @@ import classes.Browser as b
 import classes.MguruParser as p
 import classes.FileManager as f
 import re
+import time
 
 class MGuruProcessor:
     def __init__(self, url='https://mguruenglish.com/login'):
@@ -49,13 +50,15 @@ class MGuruProcessor:
             self.fileMgr.saveFile(saveFile, res.content)
 
     def process(self,sourceStoryList = './data/data.csv'):
+        print( 'StoryName,TimeTaken')
         with self.browser.createSession() as s:
             self.browser.Login(self.loginUrl)
             storyList = self.fileMgr.getCSVFileAsPandas(sourceStoryList)
             for index in storyList.index:
+                startTime = time.time()
                 storyUrl = self.getStoryURL(storyList['Story'][index]).strip()
-                print(storyList['Story'][index], storyUrl)
-                print(self.getStoryPages(storyUrl))
                 self.savemGuruAudioForStory(storyList['Story'][index], self.getStoryPages(storyUrl))
+                duration = time.time() - startTime
+                print(storyList['Story'][index],duration)
 
 

@@ -12,14 +12,28 @@ class Browser:
         self.session = None
 
     def createSession(self):
-        self.session = requests.Session()
+        try:
+            self.session = requests.Session()
+        except:
+            print('Exception in creating session')
         return self.session
 
     def get(self,  url):
-        return self.session.get(url, headers = self.headers, allow_redirects=True)
+        resp = None
+        try:
+            resp = self.session.get(url, headers = self.headers, allow_redirects=True)
+        except:
+            print('Exception in get ', url)
+        return  resp
 
     def post(self, url, data):
-        return self.session.post(url, data=data, headers = self.headers)
+        resp = None
+        try:
+            resp =self.session.post(url, data=data, headers = self.headers)
+        except:
+            print('Exception in post  ', url)
+        return resp
+
 
     def Login(self, url, login_data=None):
         if not login_data:

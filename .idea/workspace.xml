@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59592bb8-e781-436b-8b59-12420661e584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/BrowserAsync.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/MGuruProcessorAsync.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Webscrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webscrap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/MGuruProcessorAsync.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/MGuruProcessorAsync.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,22 +81,22 @@
       <screen x="0" y="27" width="1366" height="676" />
     </state>
     <state width="721" height="540" key="DebuggerActiveHint/0.27.1366.676@0.27.1366.676" timestamp="1582442127945" />
-    <state width="1343" height="187" key="GridCell.Tab.0.bottom" timestamp="1582466256398">
+    <state width="1343" height="184" key="GridCell.Tab.0.bottom" timestamp="1582468255587">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="1343" height="187" key="GridCell.Tab.0.bottom/0.27.1366.676@0.27.1366.676" timestamp="1582466256398" />
-    <state width="1343" height="187" key="GridCell.Tab.0.center" timestamp="1582466256397">
+    <state width="1343" height="184" key="GridCell.Tab.0.bottom/0.27.1366.676@0.27.1366.676" timestamp="1582468255587" />
+    <state width="1343" height="184" key="GridCell.Tab.0.center" timestamp="1582468255586">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="1343" height="187" key="GridCell.Tab.0.center/0.27.1366.676@0.27.1366.676" timestamp="1582466256397" />
-    <state width="1343" height="187" key="GridCell.Tab.0.left" timestamp="1582466256397">
+    <state width="1343" height="184" key="GridCell.Tab.0.center/0.27.1366.676@0.27.1366.676" timestamp="1582468255586" />
+    <state width="1343" height="184" key="GridCell.Tab.0.left" timestamp="1582468255585">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="1343" height="187" key="GridCell.Tab.0.left/0.27.1366.676@0.27.1366.676" timestamp="1582466256397" />
-    <state width="1343" height="187" key="GridCell.Tab.0.right" timestamp="1582466256398">
+    <state width="1343" height="184" key="GridCell.Tab.0.left/0.27.1366.676@0.27.1366.676" timestamp="1582468255585" />
+    <state width="1343" height="184" key="GridCell.Tab.0.right" timestamp="1582468255586">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="1343" height="187" key="GridCell.Tab.0.right/0.27.1366.676@0.27.1366.676" timestamp="1582466256398" />
+    <state width="1343" height="184" key="GridCell.Tab.0.right/0.27.1366.676@0.27.1366.676" timestamp="1582468255586" />
     <state width="1343" height="248" key="GridCell.Tab.1.bottom" timestamp="1582466077295">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
@@ -122,11 +121,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/classes/MGuruProcessorAsync.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/classes/MguruParser.py</url>
           <line>8</line>

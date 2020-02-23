@@ -7,21 +7,24 @@
 #     p = mp.MGuruProcessor()
 #     p.process()
 
-loop = None
+# loop = None
 import asyncio
 import classes.MGuruProcessorAsync as mp
+#
+# def handle_exception(loop, context):
+#      msg = context.get("exception", context["message"])
+#      print(msg)
 
-def handle_exception(loop, context):
-    msg = context.get("exception", context["message"])
-    print(msg)
+def main():
+    # global loop
+    p = mp.MGuruProcessorAsync()
+    p.process()
+if __name__ == "__main__":
+    main()
 
-async def main():
-    global loop
-    p = mp.MGuruProcessorAsync(loop)
-    await p.process()
 
-loop = asyncio.get_event_loop()
-loop.set_exception_handler(handle_exception)
-loop.run_until_complete(main())
+# loop = asyncio.get_event_loop()
+# loop.set_exception_handler(handle_exception)
+# loop.run_until_complete(main())
 
 

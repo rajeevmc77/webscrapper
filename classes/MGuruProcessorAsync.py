@@ -58,11 +58,14 @@ class MGuruProcessorAsync:
             self.fileMgr.saveFile(saveFile, res)
 
     async def processStory(self, storyList,index):
+        startTime = time.time()
         storyUrl = await self.getStoryURL(storyList['Story'][index])
         if storyUrl:
             storyUrl = storyUrl.strip()
         storyPages = await self.getStoryPages(storyUrl)
         await self.savemGuruAudioForStory(storyList['Story'][index], storyPages)
+        duration = time.time() - startTime
+        print(storyList['Story'][index], duration)
 
     def handle_exception(self,loop, context):
         msg = context.get("exception", context["message"])
@@ -75,11 +78,8 @@ class MGuruProcessorAsync:
         async with self.browser.createSession() as s:
             await self.browser.Login(self.loginUrl)
             storyList = self.fileMgr.getCSVFileAsPandas(sourceStoryList)
-            startTime = time.time()
             for index in storyList.index:
                 tasks.append(self.loop.create_task(self.processStory(storyList,index)))
-                duration = time.time() - startTime
-                print(storyList['Story'][index],duration)
             await asy.wait(tasks)
             #done, pending = await asyncio.wait(tasks, return_when=asy.FIRST_COMPLETED)
 

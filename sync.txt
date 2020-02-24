@@ -1,0 +1,28 @@
+/rajeev/learn/Python/WebScrapping/venv/bin/python /rajeev/learn/Python/WebScrapping/Webscrap.py
+StoryName,TimeTaken
+A Baby Hornbill learns to fly 45.97446298599243
+A cat and mouse become friends 9.108450651168823
+Annual haircut day 22.937944173812866
+Bath time for Chunnu and Munnu 10.807738065719604
+Busy Ants 23.292046070098877
+Fat King Thin Dog 10.033283710479736
+Going to buy a book 27.54662561416626
+Greet when you meet 40.55108308792114
+Hyena and Raven 24.677298545837402
+Look at me 17.715381383895874
+Lost and found 17.713640451431274
+Mouse in the House 25.089147329330444
+Naughty Bittu 12.698850870132446
+Naughty Dog 13.108153343200684
+Sheebu - the Sheep 34.611754179000854
+Singing in the rain 15.975062608718872
+The Mango Birds 39.734606981277466
+The Moon and The Cap 16.89476227760315
+Timmy and Pepe 16.99466848373413
+Tit for tat 39.833534717559814
+Too much noise 37.478022813797
+What shall I wear today? 14.94992733001709
+Tital Time Taken  519.6137683391571
+
+Process finished with exit code 0
+
